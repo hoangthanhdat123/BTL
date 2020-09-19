@@ -1,0 +1,78 @@
+
+*{
+    box-sizing: border-box;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    background: #f6f6f6;
+    font-family: 'lora', serif;
+}
+header {
+    background: #008489;
+    height: 66px;
+
+}
+header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+    
+}
+    
+header ul {
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+   
+}
+header .menu{
+        display: none;
+}
+header * {
+    color: white;
+}
+header .logo-text span{
+    color: #05f7ff;
+    font: fa;
+}
+header ul li a {
+    display: block;
+    padding:  21px;
+    font-size: 1.1em;
+    text-decoration: none;
+
+}
+header ul li a:hover {
+    background:#006669;
+    transition: 0.5s;
+}
+header ul li {
+    float: left;
+    position: relative;
+}
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+}
+header ul li:hover ul {
+    display: block;
+}
+header ul li ul li{
+    width: 100%;
+}
+header ul li ul li a{
+    padding-left: 10px;
+    color: #444;
+    background: white;
+}
+header ul li ul li a:hover{
+    background: #d5d6d6;
+}
+header ul li ul li a.logout{
+    color: red;
+}
